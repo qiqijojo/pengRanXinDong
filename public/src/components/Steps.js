@@ -27,7 +27,7 @@ class Steps extends Component {
 
 }
 
-export default Steps;
+
 
 
 var mapStateToProps = (state)=> {

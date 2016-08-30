@@ -81,22 +81,22 @@ class Login extends React.Component {
                      default=""  onFocus={this.focusUserName.bind(this)}/>
               <p className=" text-danger" >{this.state.errUserMessage}</p>
               <p className=" text-danger" >{this.props.registerErrShowed}</p>
-            </div>
+            <br/><br/></div>
             <div className="form-group">
               <input type="password" className="form-control" id="exampleInputPassword" placeholder="密码" ref="password"
                      default=""  onFocus={this.focusPassword.bind(this)}/>
               <p className=" text-danger" >{this.state.errPasswordMessage}</p>
-            </div>
+              <br/><br/></div>
             <div className="form-group">
               <input type="password" className="form-control" id="exampleInputPassword" placeholder="再次确认密码" ref="passwordAgain"
                      default=""  onFocus={this.focusPassword.bind(this)}/>
               <p className=" text-danger" >{this.state.errPasswordMessage}</p>
-            </div>
+              <br/><br/> </div>
             <div className="form-group">
               <input type="text" className="form-control" id="exampleInputPassword" placeholder="联系方式" ref="tel"
                      default=""  onFocus={this.focusTel.bind(this)}/>
               <p className=" text-danger" >{this.state.errTelMessage}</p>
-            </div>
+              <br/><br/></div>
             <button type="button" id='register-btn' className="btn btn-success" onClick={this.click.bind(this)}>注 册</button>
           </form>
         </div>

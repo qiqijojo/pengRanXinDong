@@ -31,7 +31,7 @@ const store = createStore(
     applyMiddleware(thunkMiddleware,createLogger(),menuRequestMiddleware,menuDetailRequestMiddleware,uploadRequestMiddleware,sendMessageRequestMiddleware,checkUserRequestMiddleware,getUserMessageMiddleware,userWorksRequestMiddleware,homePageMiddleware)
 );
 
-store.dispatch({
+store.dispatch({//一开始就要一个action去触发页面
   type: 'INIT'
 });
 
